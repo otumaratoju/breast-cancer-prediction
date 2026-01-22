@@ -1,0 +1,65 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #d63384; /* Pinkish color for breast cancer awareness */
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important for alignment */
+}
+
+button {
+    width: 100%;
+    background-color: #d63384;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #b02a6b;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    color: #333;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #777;
+    line-height: 1.4;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}

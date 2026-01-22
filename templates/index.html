@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🎗️ Breast Cancer Prediction System</h2>
+        <p>Enter tumor features below to predict classification.</p>
+        
+        <form action="/predict" method="POST">
+            <input type="number" step="0.01" name="radius" placeholder="Radius Mean (e.g. 17.99)" required>
+            <input type="number" step="0.01" name="texture" placeholder="Texture Mean (e.g. 10.38)" required>
+            <input type="number" step="0.01" name="perimeter" placeholder="Perimeter Mean (e.g. 122.8)" required>
+            <input type="number" step="0.01" name="area" placeholder="Area Mean (e.g. 1001.0)" required>
+            <input type="number" step="0.001" name="smoothness" placeholder="Smoothness Mean (e.g. 0.118)" required>
+            
+            <button type="submit">Analyze Results</button>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">
+                <h3>{{ prediction_text }}</h3>
+            </div>
+        {% endif %}
+
+        <div class="disclaimer">
+            <p><strong>Note:</strong> This system is strictly for educational purposes and must not be used for medical diagnosis.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Name: Otumara Toritseju
+Matric Number: 23CG034145
+Machine Learning Algorithm Used: Support Vector Machine (SVM)
+Model persistence method used: Joblib
+Live URL: (Paste the link Render gives you in the next step)
+GitHub repository link: https://github.com/olayinkajohnsonige/BreastCancer_Project_Johnson_Ige_Olayinka_23CG034089
